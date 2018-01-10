@@ -1,0 +1,57 @@
+nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: 0000;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex-rection: row;
+}
+
+
+label {
+  display: flex;
+}
+
+
+li {
+  height: 1.5em;
+  padding: .5em 1em;
+
+ ul {
+   flex-direction: column;
+   display: none;
+ }
+
+  &:hover {
+    background: #ccc;
+    a {
+      color: #000;
+    }
+
+    ul {
+      background: #ccc;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 2.5em;
+      left: 0;
+
+      li {
+        &:hover {
+          background: #000;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
